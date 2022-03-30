@@ -1,0 +1,17 @@
+<li class=" border p-3 rounded m-2">
+    <article>
+        <div>
+            <div>
+                <img src="{{ image }}" alt="{{ title }}" class="rounded" style="width:200px;height:auto:">
+            </div>
+            <div>
+                <h3>{{ title }}</h3>
+                <address>{{ location }}</address>
+            </div>
+        </div>
+        <div>
+            <!-- <a href="/meetups/{{ meetup_item.slug }}" class="text-muted">More Details.</a> -->
+            <a href="{% url 'meetup-details' slug %}" class="text-muted">More Details.</a> 
+        </div>
+    </article>
+</li>
